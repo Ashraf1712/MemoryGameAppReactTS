@@ -72,6 +72,7 @@ function App() {
           setRevealedGrid([...newRevealedGrid])
         }, 1000);
       } else {
+        setDisabled(true);
         const hasWon = revealedGrid.flat().every((isRevealed) => isRevealed);
         if (hasWon) {
           setTimeout(() => {
